@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;500;600&display=swap" rel="stylesheet">
+    <title>About me</title>
+    <style>
+        body{
+            width: 700px;
+            margin: 0 auto;
+            background: #42EADDFF;
+            font-family: "Barlow Semi Condensed", sans-serif;
+        }
+        input{
+            padding: 12px 0;
+            margin: 1rem 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .apply{
+            width: 70%;
+            display: inline-block;
+            font-size: 1rem;
+        }
+        input[placeholder]{
+            padding: 0.5rem;
+        }
+        input[type=submit]{
+            width: 15%;
+            background-color: #66bfbf;
+            border-radius: 10px;
+            color: #fff;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            border: 3px solid gray;
+            background-color: #ff5589;
+        }
+        input:focus{
+            color: goldenrod;
+        }
+        label{
+            font-size: 1rem;
+            color: #F95700FF;
+        }
+        h1{
+            color: #ff5589;
+        } 
+    </style>
+</head>
+<body>
+    <h1>About Me</h1>
+    <form method="POST"  action="">
+        <label for="fname">First Name</label><br>
+        <input class="apply" type="text" id="fname" placeholder="First Name"><br>
+
+        <label for="lname">Last Name</label><br>
+        <input class="apply" type="text" id="lname" placeholder="Last Name"><br>
+
+        <label for="number">Phone Number</label><br>
+        <input  class="apply" type="number" id="number" placeholder="Phone Number"><br>
+
+        <label for="email">Email Address</label><br>
+        <input class="apply" type="email" id="number" placeholder="Email"><br>
+
+        <label for="pswd">Password</label><br>
+        <input class="apply" type="password" id="pswd" placeholder="Password"><br>
+
+        <label for="gen">Gender</label><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male">
+        <label for="fmale">Female</label>
+        <input type="radio" id="fmale"checked><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob"><br>
+
+        <label for="age">Age Range  0-16</label>
+        <input type="range" id="age">17-30<br>
+
+        <label for="uni">UNIVERSITY OF CHOICE</label><br>
+        <!-- <select name="University" id="" required>
+            <option value="Unilag">Unilag</option>
+            <option value="OAU">OAU</option>
+            <option value="Uniben">Uniben</option>
+            <option value="Uniport">Uniport</option>
+        </select> -->
+        <label for="Unilag">Unilag</label>
+        <input type="checkbox" id="Unilag">
+        <label for="OAU">OAU</label>
+        <input type="checkbox" id="OAU">
+        <label for="Uniben">Uniben</label>
+        <input type="checkbox" id="Uniben">
+        <label for="Uniport">Uniport</label>
+        <input type="checkbox" id="Uniport"><br>
+
+        <label for="color">Choose a color</label>
+        <input type="color" id="color"><br><br>
+
+        <input type="submit" value="SUBMIT">
+
+        
+    </form>
+</body>
+</html>
